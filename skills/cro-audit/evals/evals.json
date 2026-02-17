@@ -1,0 +1,48 @@
+{
+  "skill_name": "ecommerce-cro-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Run a CRO audit on https://allbirds.com — I want to know why our conversion rate might be low. Give me the report as an HTML file.",
+      "expected_output": "An HTML report file covering Homepage, Collection, PDP, Cart, and Checkout with scores, screenshots, and prioritized recommendations",
+      "files": [],
+      "assertions": [
+        "The skill navigates to allbirds.com and takes screenshots",
+        "At least 4 page types are discovered and analyzed (Homepage, Collection, PDP, Cart)",
+        "Each page has a numerical score between 1-5",
+        "Findings include specific element references (not generic advice)",
+        "A prioritized action plan with quick wins and strategic items is present",
+        "An HTML file is generated and saved to the outputs folder",
+        "The report includes both desktop and mobile observations"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Analyze this Shopify store for conversion issues: https://gymshark.com — focus especially on mobile experience and checkout flow.",
+      "expected_output": "A CRO audit report with extra depth on mobile UX and checkout, including annotated observations",
+      "files": [],
+      "assertions": [
+        "The skill identifies it as a Shopify store",
+        "Mobile screenshots are taken (390px viewport) for each page",
+        "Checkout page analysis includes form design, guest checkout, and payment options evaluation",
+        "Mobile-specific findings are called out (sticky CTA, tap targets, viewport issues)",
+        "The report uses the P0-P3 priority framework",
+        "Recommendations are specific enough to act on (mention colors, sizes, positions)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "What's wrong with this ecommerce site? https://www.everlane.com — give me the report as a PDF.",
+      "expected_output": "A PDF report with the full CRO audit following the LIFT model framework",
+      "files": [],
+      "assertions": [
+        "The skill reads the PDF skill before generating the PDF",
+        "The audit covers all discoverable page types",
+        "The LIFT model lenses (clarity, relevance, friction, anxiety, urgency) are applied",
+        "Cross-cutting issues are identified (patterns that appear across multiple pages)",
+        "The executive summary includes an overall score and top 5 findings",
+        "A PDF file is generated and saved to the outputs folder"
+      ]
+    }
+  ]
+}

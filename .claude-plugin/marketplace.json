@@ -1,0 +1,14 @@
+{
+  "name": "clips-os-marketplace",
+  "owner": {
+    "name": "Giovanni Brando Dalla Rizza"
+  },
+  "plugins": [
+    {
+      "name": "clips-os",
+      "source": "./",
+      "description": "Growth Engine for modern Founders and Marketers",
+      "version": "0.1.0"
+    }
+  ]
+}
